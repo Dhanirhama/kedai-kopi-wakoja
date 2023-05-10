@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kedai Kopi Wakoja</title>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -20,20 +20,27 @@
   <body>
     <!-- navbar Start -->
     <nav class="navbar">
-        <a href="#" class="navbar-logo">Kedai<span>Wakoja.</span></a>
+      <a href="#" class="navbar-logo">Kedai<span>Wakoja.</span></a>
 
-        <div class="navbar-nav">
-            <a href="#">Home</a>
-            <a href="#about">Tentang Kami</a>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Kontak</a>
-        </div>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
 
-        <div class="navbar-ekstra">
-          <a href="#" id="search"><i data-feather="search"></i></a>
-          <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-          <a href="#" id="menu-list"><i data-feather="menu"></i></a>
-        </div>
+      <div class="navbar-ekstra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu-list"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search form finish -->
     </nav>
     <!-- navbar Finish -->
 
@@ -50,10 +57,10 @@
     <!-- About Section Start -->
     <section id="about" class="about">
       <h2><span>Tentang</span> Kami</h2>
-      
+
       <div class="row">
         <div class="about-img">
-          <img src="img/tentang-kami.jpg" alt="tentang kami">
+          <img src="img/tentang-kami.jpg" alt="tentang kami" />
         </div>
         <div class="content">
           <h3>Kenapa Memilih Kopi Kami</h3>
@@ -71,27 +78,27 @@
 
       <div class="row">
         <div class="menu-card">
-          <img src="img/menu/black-coffe.jpg" alt="Black Coffe" class="menu-card-img">
+          <img src="img/menu/black-coffe.jpg" alt="Black Coffe" class="menu-card-img" />
           <h3 class="menu-card-title">- Black Coffe -</h3>
           <p class="menu-price">IDR 5K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/capuchino-coffe.jpg" alt="Capuchino Coffe" class="menu-card-img">
+          <img src="img/menu/capuchino-coffe.jpg" alt="Capuchino Coffe" class="menu-card-img" />
           <h3 class="menu-card-title">- Capuchino Coffe -</h3>
           <p class="menu-price">IDR 10K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/ekspresso-coffe.jpg" alt="Ekspresso Coffe" class="menu-card-img">
+          <img src="img/menu/ekspresso-coffe.jpg" alt="Ekspresso Coffe" class="menu-card-img" />
           <h3 class="menu-card-title">- Ekspresso Coffe -</h3>
           <p class="menu-price">IDR 15K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/kopi susu.jpg" alt="Kopi Susu" class="menu-card-img">
+          <img src="img/menu/kopi susu.jpg" alt="Kopi Susu" class="menu-card-img" />
           <h3 class="menu-card-title">- kopi Susu -</h3>
           <p class="menu-price">IDR 7K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/latte-coffe.jpg" alt="Latte Coffe" class="menu-card-img">
+          <img src="img/menu/latte-coffe.jpg" alt="Latte Coffe" class="menu-card-img" />
           <h3 class="menu-card-title">- Latte Coffe -</h3>
           <p class="menu-price">IDR 15K</p>
         </div>
@@ -104,26 +111,31 @@
       <h2><span>Kontak</span> Kami</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, harum.</p>
       <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31614.70389888368!2d111.35245085510431!3d-7.91198713522095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79760311105823%3A0x99980baded6f583b!2sKrebet%2C%20Kec.%20Jambon%2C%20Kabupaten%20Ponorogo%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1675939777769!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31614.70389888368!2d111.35245085510431!3d-7.91198713522095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79760311105823%3A0x99980baded6f583b!2sKrebet%2C%20Kec.%20Jambon%2C%20Kabupaten%20Ponorogo%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1675939777769!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
         <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Nama">
+            <input type="text" placeholder="Nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="No. HP">
+            <input type="text" placeholder="No. HP" />
           </div>
           <button type="submit" class="btn-kirim">Kirim Pesan</button>
         </form>
       </div>
     </div>
     <!-- Contact Section Finish -->
-
 
     <!-- Footer Start -->
     <footer>
